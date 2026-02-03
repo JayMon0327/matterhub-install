@@ -31,7 +31,7 @@ sudo python3 -m pip install -r requirements.txt
 # ──────────────────────────────────────────────
 # 3) systemd 서비스 등록
 echo "🔧 systemd 서비스 등록"
-sudo cp matterhub.service /etc/systemd/system
+sudo cp device_config/matterhub.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable matterhub.service
 sudo systemctl restart matterhub.service
